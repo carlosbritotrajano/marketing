@@ -1,0 +1,417 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img, video{
+    max-width: 100%;
+}
+
+header{
+    position: relative;
+}
+
+video{
+    opacity: 0.6;
+}
+
+.title-txt{
+    position: absolute;
+    top: 0;
+    max-width: 500px;
+    margin-top: 150px;
+    padding-left: 50px;
+}
+
+.title-txt > h1{
+    font-size: 3em;
+    
+}
+
+.title-txt > p{
+    font-size: 1.3em;
+    padding: 20px 0px;
+    font-style: italic;
+}
+
+.title-txt button > a{
+    text-decoration: none;
+    color: white;
+}
+
+.title-txt button a:hover{
+    color: black;
+}
+
+.title-txt > button{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: #0061ff;
+}
+
+.title-txt button:hover{
+    background-color: white;
+    /* backdrop-filter: blur(10px); */
+    border: 1px solid white;
+    color: black;
+}
+
+.orcar{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   max-width: 1250px;
+   margin: 50px auto;
+}
+
+.orcar > div{
+    margin: 0px 10px;
+}
+
+.orcar > div > img{
+    border-radius: 10px;
+}
+
+.orcar h2{
+    padding: 10px 0px;
+}
+
+.orcar p{
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.orcamento > button > a{
+    color: white;
+}
+
+.orcamento > button{
+    border: none;
+    padding: 20px 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background: #4caf50;
+    cursor: pointer;
+    color: white;
+}
+
+.orcamento-contato > button:hover{
+    background: green;
+    color: white;
+}
+
+.catalogo > button > a{
+    color: white;
+    text-decoration: none;
+}
+
+.catalogo > button{
+    border: none;
+    padding: 20px 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background: #0061ff;
+    cursor: pointer;
+    color: white;
+}
+
+.catalogo> button:hover{
+    background: blue;
+    color: white;
+}
+
+/* Produtos catalogo */
+
+.produtos-catalogo{
+   display: flex;
+   flex-wrap: wrap;
+   max-width: 1300px;
+   margin: 100px auto;
+}
+
+.produtos-catalogo > div{
+    max-width: 300px;
+    margin: 0px 10px;
+}
+
+/* Produtos 1*/
+
+.produto1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #0061ff;
+    align-items: center;
+}
+
+.produto1-img{
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+    padding: 250px 0px;
+    margin: 80px 0px;
+    background-image: url('../imagens/cutelo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.produto1-txt {
+    max-width: 500px;
+    padding-left: 50px;
+}
+
+.produto1-txt > h2{
+    font-size: 2em;
+    color: white;
+}
+
+.produto1-txt > p{
+    padding: 10px 0px;
+    font-size: 1.3em;
+    font-style: italic;
+    color: white;
+}
+
+.produto1-txt > button{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.produto1-txt > button > a{
+    text-decoration: none;
+    color: black
+}
+
+.produto1-txt > button > a:hover{
+    color: white;
+}
+
+.produto1-txt > button:hover{
+    background-color: transparent;
+    /* backdrop-filter: blur(10px); */
+    border: 1px solid white;
+    color: white;
+}
+
+/* Produtos 2 */
+
+.produto2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #0061ff;
+}
+
+.produto2-img{
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    padding: 250px 0px;
+    margin: 80px 0px;
+    background-image: url('../imagens/cantil2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.produto2-txt {
+    max-width: 500px;
+    padding-left: 100px;
+}
+
+.produto2-txt > h2{
+    font-size: 2em;
+}
+
+.produto2-txt > h2, .produto2-txt > p{
+    color: white;
+}
+
+.produto2-txt > p{
+    padding: 10px 0px;
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+.produto2-txt > button{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.produto2-txt > button > a{
+    text-decoration: none;
+    color: black
+}
+
+.produto2-txt > button:hover{
+    background-color: transparent;
+    /* backdrop-filter: blur(10px); */
+    border: 1px solid black;
+    color: black;
+}
+
+/* Formulario */
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+ }
+ 
+ .form > div{
+     max-width: 500px;
+     margin: 100px 50px;
+ }
+ 
+ .formulario{
+     padding: 10px;
+ }
+
+.ct-email{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-email > h1{
+    padding-bottom: 50px;
+}
+
+.form-email > div > .txt{
+   padding: 100px;
+}
+
+.form-email > div > input, .form-email > div > textarea{
+    border: none;
+    
+}
+
+.form-email > div > input, .form-email > div > textarea{
+    border-bottom: 2px solid black;
+    padding: 10px 0px;
+    width: 500px;
+}
+
+#enviar{
+    cursor: pointer;
+    background-color: #004396;
+    border: none;
+    color: white;
+}
+
+@media(max-width: 1000px){
+    .title-txt{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 900px){
+    .orcar{
+        grid-template-columns: 1fr;
+     }
+
+     .produtos{
+        grid-template-columns: 1fr;
+     }
+
+     .produtos-catalogo{
+        display: grid;
+        grid-template-columns: 1fr;
+     }
+
+     .produto1{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+
+    .produto1-img{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        padding: 0px 0px;
+        margin: 80px 0px;
+        background-image: none;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .produto1-txt {
+        max-width: 500px;
+        margin: 10px auto;
+        
+    }
+
+    .produtos-catalogo{
+        display: flex;
+        flex-wrap: wrap;
+     }
+     
+    .produto2{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .produto2-img{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        padding: 0px 0px;
+        margin: 80px 0px;
+        background-image: none;
+    }
+
+    .produto2-txt {
+        max-width: 500px;
+        margin: 10px auto;
+    }
+
+    .fale-conosco{
+        grid-template-columns: 1fr;
+    }
+
+    .form-email{
+        max-width: 500px;
+        margin: 50px auto;
+    }
+}
+
+@media(max-width: 757px){
+    header{
+        display: none;
+    }
+
+    video{
+        display: none;
+    }
+
+    .title-txt{
+       display: none;
+    }
+
+    .form-email > div > input, .form-email > div > textarea{
+        border-bottom: 2px solid black;
+        padding: 10px 0px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 300px){
+    .form-email > div > input, .form-email > div > textarea{
+        border-bottom: 2px solid black;
+        padding: 10px 0px;
+        width: 80%;
+    }
+     
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rei da Cutelaria</title>
+    <link rel="stylesheet" href="css/personalizacao.css">
+</head>
+<body>
+    <header>
+        <video autoplay loop muted>
+            <source src="videos/video-bg.mp4">
+        </video>
+
+        <div class="title-txt">
+            <h1>Produtos Personalizados</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit commodi in amet nam recusandae velit, iusto, sit maiores nesciunt quae mollitia itaque provident distinctio soluta qui libero eum, debitis quos.</p>
+            <button><a href="">Saiba mais</a></button>
+        </div>
+    </header>
+
+    <section class="orcar">
+        <div class="orcamento">
+            <img src="imagens/orcamento.jpg" alt="">
+            <h2>Orçamento</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus nisi accusantium eligendi rerum nobis neque, labore possimus ex libero ducimus incidunt necessitatibus minima modi mollitia ratione dolores architecto perferendis harum.</p>
+
+            <button type="button" onclick="enviar();">Whatsapp</button>
+        </div>
+
+        <div class="catalogo">
+            <img src="imagens/catalogo2.jpg" alt="">
+            <h2>Catalogo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab atque, nisi quia quibusdam praesentium omnis cupiditate illo cum facere libero repellat dignissimos distinctio. Omnis, enim. Hic atque quos illo nemo!</p>
+            <button type="button"><a href="">Ver catalogo</a></button>
+        </div>
+    </section>
+
+    <section class="produto1">
+        <div class="produto1-img"></div>
+
+        <div class="produto1-txt">
+            <p>Imagens Personalizadas</p>
+            <h2>Personalizamos <br> qualquer imagem</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam nisi, recusandae commodi neque optio delectus accusamus libero veniam provident. Dignissimos dolor nemo molestiae tempore consequatur pariatur natus nisi ratione quisquam? </p>
+            <button><a href="">Saiba mais</a></button>
+        </div>
+    </section>
+
+    <!-- Produtos catalogo -->
+
+    <section class="produtos-catalogo">
+        <div class="pc1-img">
+            <img src="imagens/canivete.png" alt="">
+        </div>
+        <div class="pc2-img">
+            <img src="imagens/saboeira.png" alt="">
+        </div>
+        <div class="pc3-img">
+            <img src="imagens/cantil.png" alt="">
+        </div>
+        <div class="pc4-img">
+            <img src="imagens/garra.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="produto2">
+        <div class="produto2-txt">
+            <p>Imagens Personalizadas</p>
+            <h2>Personalizamos <br> qualquer imagem</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam nisi, recusandae commodi neque optio delectus accusamus libero veniam provident. Dignissimos dolor nemo molestiae tempore consequatur pariatur natus nisi ratione quisquam? </p>
+            <button><a href="">Saiba mais</a></button>
+        </div>
+
+        <div class="produto2-img"></div>
+    </section>
+
+    <!-- formulario -->
+
+    <section class="form">
+        <div class="ct-email">
+           
+            <form action="https://api.staticforms.xyz/submit" method="post"> 
+                <div class="form-email">
+                    <h1>Entre em contato conosco</h1>
+
+                    <div>
+                        <input type="text" name="name" id="" placeholder="Digite seu nome" autocomplete="off" required>
+                    </div>
+
+                    <div>
+                        <input type="text" name="email" id="" placeholder="Digite seu email" autocomplete="off" required>
+                    </div>
+
+                    <div>
+                        <textarea name="message"  cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                        <button type="submit" onclick="obrigado()">Enviar</button>
+                    </div>
+
+                    <input type="hidden" name="accessKey" value="cefada46-224f-4bd2-9a98-5a5cca742571"> 
+                    <!-- <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html"> -->
+                </div>
+            </form>
+        </div>
+        
+        <div>
+             <img src="imagens/gravacao.jpg" alt="">
+        </div>
+     </section>
+
+     <script>
+       function enviar(){
+
+        var numeroVendedor = "+5511961805535";
+
+        var url = "https://wa.me/" + numeroVendedor + "?text=" ;
+
+        window.open(url, '_blanK').focus()
+    }
+
+    function obrigado(){
+        var url = "http://127.0.0.1:5500/obrigado.html";
+
+        window.open(url, '_blanK').focus()
+    }
+
+     </script>
+
+
+</body>
+</html>

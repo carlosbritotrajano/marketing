@@ -1,0 +1,152 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.fale-conosco{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+}
+
+.fale-conosco > div{
+    margin: 0px 10px;
+}
+
+.contato{
+    background-color: #004396;
+    color: white;
+    border-radius: 5px;
+}
+
+.contato > div{
+    margin: 20px 0px;
+}
+
+.contato > .ligar{
+    padding-top: 5px;
+}
+
+.ligar > h2{
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+.contato > div > h3{
+    margin: 20px 0px;
+}
+
+.contato > div > a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.local > h3{
+    margin: 10px 0px;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.local > a{
+    line-height: 1.5;
+    max-width: 200px;
+    margin: auto;
+}
+
+.horarios > p{
+    line-height: 1.5;
+}
+
+.horarios > h2{
+    font-style: italic;
+}
+
+.contato > div > .tel-fisico{
+    margin-bottom: 20px;
+}
+
+.ct-email{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-email > h1{
+    padding-bottom: 50px;
+}
+
+.form-email > div > .txt{
+   padding: 100px;
+}
+
+.form-email > div > input, .form-email > div > textarea{
+    border: none;
+    
+}
+
+.form-email > div > input, .form-email > div > textarea{
+    border-bottom: 2px solid black;
+    padding: 10px 0px;
+    width: 500px;
+}
+
+.txt{
+    padding: 10px;
+}
+
+#enviar{
+    cursor: pointer;
+    background-color: #004396;
+    border: none;
+    color: white;
+}
+
+.mapas-lojas{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mapas-lojas > div{
+    margin: 0px 10px;
+    border-radius: 10px;
+}
+
+@media(max-width: 900px){
+    .fale-conosco{
+        grid-template-columns: 1fr;
+    }
+
+    .form-email{
+        max-width: 500px;
+        margin: 50px auto;
+    }
+
+}
+
+@media(max-width: 1000px){
+    .mapas-lojas{
+        grid-template-columns: 1fr;
+    }
+     
+}
+
+@media(max-width: 700px){
+    .form-email > div > input, .form-email > div > textarea{
+        border-bottom: 2px solid black;
+        padding: 10px 0px;
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 300px){
+    .form-email > div > input, .form-email > div > textarea{
+        border-bottom: 2px solid black;
+        padding: 10px 0px;
+        width: 80%;
+    }
+     
+}

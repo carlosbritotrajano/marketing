@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rei da Cutelaria</title>
+    <link rel="stylesheet" href="css/for-whatsapp.css">
+</head>
+<body>
+
+    <section class="produtos">
+        <div class="produtos-bg">
+            <div class="foto1"> </div>
+            <div class="foto2"> </div>
+            <div class="foto3"> </div>
+            <div class="foto4"> </div>
+        </div>
+    </section>
+
+     <form action="">
+        <h1>Enviar dados para Whatsapp</h1>
+
+        <label for="cars">Escolha o produto</label>
+
+        <select id="select">
+            <option value="faca" class="produto">Faca Chef 8"</option>
+            <option value="canivete" class="produto">Canivete</option>
+            <option value="copo" class="produto">Copo</option>
+        </select>
+
+        <label for="">Name</label>
+        <input type="text" class="name">
+
+        <label for="">Email</label>
+        <input type="text" class="email">
+
+        <label for="">Mensagem</label>
+        <textarea class="message" cols="10" rows="5" maxlength="25" placeholder="Tamanho máximo 25 Caracteres"></textarea>
+
+        <button type="button" onclick="enviar();">Whatsapp</button>
+     </form>
+
+     <script src="javascript/form-whatsapp.js"></script>
+
+</body>
+</html>
