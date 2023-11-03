@@ -145,7 +145,7 @@ ul{
 
 .zoom{
     /* overflow: hidden; */
-    box-shadow:  10px 10px 10px rgb(121, 118, 118);
+    /* box-shadow:  10px 10px 10px rgb(121, 118, 118); */
     cursor: pointer;
 }
 
@@ -178,6 +178,51 @@ ul{
 /* Vantagens */
 
 .vantagens{
+    background-color: #190e8e;
+}
+
+.vantagens h2{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding: 50px 0px;
+}
+
+.vantagens > article{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 980px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.vantagens > article > div{
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    flex: 1 1 300px;
+    padding: 50px;
+    margin: 10px; 
+    text-align: center;
+}
+
+.vantagens > article > div:hover{
+   background-color: #4546EC;
+   transition: 1s;
+}
+
+.vantagens > article > div > img{
+    padding-bottom: 10px;
+}
+
+
+.vantagens > article > div > h3{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+
+/* .vantagens{
     background-color: #190e8e;;
     color: white;
 }
@@ -213,7 +258,7 @@ ul{
    height: 200px;
    background-color: white;
    color: white;
- }
+ } */
 
  /* Contato */
 
@@ -246,6 +291,7 @@ ul{
 
 .blog{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -279,10 +325,9 @@ ul{
 }
 
 .blog-box{
-    width: 350px;
+    max-width: 350px;
     background-color: #ffffff;
     border-bottom: 1px solid rgba(0,0,0,0.05);
-    margin: 0px 20px;
 }
 
 .blog-img{
@@ -396,13 +441,13 @@ ul{
         padding: 0px 0px 0px 0px;
    }
 
-    .especialidades > div > article{
-        margin: 20px 50px;
-    }
+    /* .especialidades > div > article{
+        margin: 20px 80px;
+    } */
 
     .especialidades > div > article{
         flex: 1 1 350px;
-        margin: 10px;
+        margin: 10px 20px;
         padding: 15px;
         text-align: center;
         border-radius: 20px;
