@@ -83,12 +83,13 @@ ul{
 }
 
 .agencia p{
-    padding: 30px 0px;
+    padding: 20px 10px;
+    font-size: 20px;
 }
 
 .agencia button{
-    font-size: 20px;
-    padding: 15px 50px;
+    font-size: 16px;
+    padding: 15px 20px;
     margin-top: 10px;
     border: none;
     border-radius: 15px;
@@ -118,7 +119,7 @@ ul{
 .especialidades > div > article{
     flex: 1 1 200px;
     margin: 10px 15px;
-    padding: 10px;
+    padding: 30px;
     text-align: center;
     border-radius: 20px;
     background-color: #190e8e;
@@ -136,10 +137,11 @@ ul{
 .especialidades > div > article > h2{
     padding: 0px 0px 10px 0px;
     color: white;
+    font-size: 20px;
 }
 
 .especialidades > div > article > p{
-    font-size: 1.7em;
+    font-size: 20px;
     color: rgb(187, 186, 186);
 }
 
@@ -171,8 +173,11 @@ ul{
 
 .escolha-empresa div{
     flex: 1 1 400px;
-    font-size: 1.3em;
     line-height: 1.5;
+}
+
+.escolha-empresa > div > p{
+    font-size: 20px;
 }
 
 /* Vantagens */
@@ -220,6 +225,10 @@ ul{
     text-align: center;
     padding-bottom: 10px;
     font-size: 40px;
+}
+
+.vantagens > article > div > p{
+    font-size: 20px;
 }
 
 /* .vantagens{
