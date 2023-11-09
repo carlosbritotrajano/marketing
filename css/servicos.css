@@ -13,13 +13,12 @@ h1{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
-    margin: 50px 50px;
 }
 
 .servicos > div{
     border-radius: 10px;
     margin: 10px;
-    padding: 50px 10px 80px 10px;
+    padding: 50px 10px 50px 10px;
     box-shadow: 0.6rem 0.6rem 1.2rem rgb(230, 228, 228),
                 -0.6rem -0.6rem 1rem rgb(230, 228, 228);
 }
@@ -32,4 +31,13 @@ h1{
    padding: 10px 30px;
    font-size: 1.2em;
    line-height: 1.4;
+}
+
+@media(max-width: 900px){
+    .servicos{
+        grid-template-columns: 1fr;
+    }
+
+    
+    
 }
